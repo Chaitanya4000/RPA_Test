@@ -1,0 +1,17 @@
+{
+
+"URLLink" : "https://www.juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/buscador-general.html",
+
+"BEReportingMailID" : "chaitanyakulkarni4000@gmail.com",
+
+"AEReportingMailID" : "chaitanyakulkarni4000@gmail.com",
+
+"TypeOfContract" : "Concesión de obras públicas",
+
+"ProcedimientoDeAdjudicación":"Abierto",
+
+"EstadoDeLaLicitación":"Publicada",
+
+"ExcelPathForResults":"Data\\resultados.xslx"
+
+}
