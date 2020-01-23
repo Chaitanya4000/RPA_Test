@@ -76,7 +76,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </State>
-    <State x:Name="__ReferenceID20" sap2010:Annotation.AnnotationText="1. Initialize Variables&#xD;&#xA;2. LoadUp Config.&#xD;&#xA;3. Clear enviornments" DisplayName="1.Init State" sap:VirtualizedContainerService.HintSize="180,135" sap2010:WorkflowViewState.IdRef="State_1">
+    <State x:Name="__ReferenceID20" sap2010:Annotation.AnnotationText="1. Initialize Variables&#xA;2. LoadUp Config.&#xA;3. Clear enviornments" DisplayName="1.Init State" sap:VirtualizedContainerService.HintSize="180,135" sap2010:WorkflowViewState.IdRef="State_1">
       <State.Entry>
         <Sequence DisplayName="Init Sequence" sap:VirtualizedContainerService.HintSize="480,1521" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -572,7 +572,7 @@
           </sap:WorkflowViewStateService.ViewState>
           <Transition.Condition>[(exp_InitState Is Nothing) And (bol_ConfigPathExists = True) And (JsonConfig IsNot Nothing)]</Transition.Condition>
           <Transition.To>
-            <State x:Name="__ReferenceID17" sap2010:Annotation.AnnotationText="1. Open IE browser&#xD;&#xA;2. Navigate to URL&#xD;&#xA;3. Apply Filters" DisplayName="2.OpenBrowserAndNavigate" sap:VirtualizedContainerService.HintSize="218,141" sap2010:WorkflowViewState.IdRef="State_5">
+            <State x:Name="__ReferenceID17" sap2010:Annotation.AnnotationText="1. Open IE browser&#xA;2. Navigate to URL&#xA;3. Apply Filters." DisplayName="2.OpenBrowserAndNavigate" sap:VirtualizedContainerService.HintSize="218,141" sap2010:WorkflowViewState.IdRef="State_5">
               <State.Entry>
                 <Sequence sap:VirtualizedContainerService.HintSize="480,925" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
@@ -672,7 +672,7 @@
                 <Transition DisplayName="AE in OpenBrowserState" sap2010:WorkflowViewState.IdRef="Transition_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">291,405.9 110,405.9 110,846</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">291,405.9 109,405.9 109,846</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">29</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
                     </scg:Dictionary>
@@ -692,7 +692,7 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[(exp_OpenBrowser Is Nothing) And (bol_URLOpened = False)]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID16" sap2010:Annotation.AnnotationText="1.Config not present at provided path&#xD;&#xA;2.URL is incorrect&#xD;&#xA;3.0 Results found&#xD;&#xA;4.No files to download" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="268,139" sap2010:WorkflowViewState.IdRef="State_4">
+                    <State x:Name="__ReferenceID16" sap2010:Annotation.AnnotationText="1.Config not present at provided path&#xA;2.URL is incorrect&#xA;3.0 Results found&#xA;4.No files to download" DisplayName="Business Exception" sap:VirtualizedContainerService.HintSize="268,139" sap2010:WorkflowViewState.IdRef="State_4">
                       <State.Entry>
                         <Sequence sap:VirtualizedContainerService.HintSize="480,924" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
@@ -930,14 +930,14 @@
                 <Transition DisplayName="Success" sap2010:WorkflowViewState.IdRef="Transition_8">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:PointCollection x:Key="ConnectorLocation">476.3,490.5 476.3,520.5 314.1,520.5 314.1,559.5</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">476.3,490.5 476.3,520.5 314.05,520.5 314.05,559.5</av:PointCollection>
                       <x:Int32 x:Key="SrcConnectionPointIndex">67</x:Int32>
                       <x:Int32 x:Key="DestConnectionPointIndex">2</x:Int32>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Transition.Condition>[(exp_OpenBrowser Is Nothing) And (bol_URLOpened = True)]</Transition.Condition>
                   <Transition.To>
-                    <State x:Name="__ReferenceID18" sap2010:Annotation.AnnotationText="1. Validate if data is present&#xD;&#xA;2. Scrap the present data&#xD;&#xA;3. Add the scrapped data to excel" DisplayName="3.Data Scrapping" sap:VirtualizedContainerService.HintSize="221,165" sap2010:WorkflowViewState.IdRef="State_6">
+                    <State x:Name="__ReferenceID18" sap2010:Annotation.AnnotationText="1. Validate if data is present&#xA;2. Scrap the present data&#xA;3. Add the scrapped data to excel" DisplayName="3.Data Scrapping" sap:VirtualizedContainerService.HintSize="221,165" sap2010:WorkflowViewState.IdRef="State_6">
                       <State.Entry>
                         <Sequence sap:VirtualizedContainerService.HintSize="480,1016" sap2010:WorkflowViewState.IdRef="Sequence_14">
                           <sap:WorkflowViewStateService.ViewState>
@@ -1119,7 +1119,7 @@
                           </sap:WorkflowViewStateService.ViewState>
                           <Transition.Condition>[(exp_DataScrapping Is nothing) And (bol_ResultsFound = True)]</Transition.Condition>
                           <Transition.To>
-                            <State x:Name="__ReferenceID19" sap2010:Annotation.AnnotationText="1. Foe each record scrapped:&#xD;&#xA;1.1. Navigate to ‘Documentación&#xD;&#xA;complementaria’&#xD;&#xA;1.2. Download files to local folder&#xD;&#xA;" DisplayName="4.DownloadFiles" sap:VirtualizedContainerService.HintSize="242,213" sap2010:WorkflowViewState.IdRef="State_7">
+                            <State x:Name="__ReferenceID19" sap2010:Annotation.AnnotationText="1. Foe each record scrapped:&#xA;1.1. Navigate to ‘Documentación&#xA;complementaria’&#xA;1.2. Download files to local folder&#xA;" DisplayName="4.DownloadFiles" sap:VirtualizedContainerService.HintSize="242,213" sap2010:WorkflowViewState.IdRef="State_7">
                               <State.Entry>
                                 <Sequence sap:VirtualizedContainerService.HintSize="480,923" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                   <sap:WorkflowViewStateService.ViewState>

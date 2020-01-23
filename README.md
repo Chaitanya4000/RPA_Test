@@ -22,5 +22,11 @@ For example: in_str_TypeOfContract
 > Naming conventions used for variables is as given below:
 TypeOfVariable_NameOfVariable
 For example: str_StateName
-
-
+>Package dependencies:
+1.Microsoft.Activities = 1.0.1
+2.Microsoft.Activities.Extensions = 2.0.6.9
+3.UiPath.Excel.Activities = 2.8.0
+4.UiPath.Mail.Activities = 1.8.0
+5.UiPath.System.Activities = 19.12.0
+6.UiPath.UiAutomation.Activities = 19.12.0
+7.UiPath.WebAPI.Activities = 1.4.4
