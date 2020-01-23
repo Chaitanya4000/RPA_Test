@@ -1863,9 +1863,9 @@
     "restore": {
       "projectUniqueName": "RPA_Test",
       "projectName": "RPA_Test",
-      "projectPath": "C:\\Users\\Chaitanya Kulkarni\\Desktop\\RPA_TEST\\RPA_Test\\.local",
+      "projectPath": "C:\\Users\\Chaitanya Kulkarni\\Desktop\\Chaitanya\\RPABots\\RPA_Test\\.local",
       "packagesPath": "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Chaitanya Kulkarni\\Desktop\\RPA_TEST\\RPA_Test\\.local"
+      "outputPath": "C:\\Users\\Chaitanya Kulkarni\\Desktop\\Chaitanya\\RPABots\\RPA_Test\\.local"
     },
     "frameworks": {
       "net461": {

@@ -2,6 +2,30 @@
   "Packages": [
     {
       "Package": {
+        "Id": "Microsoft.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.Services.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Client.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Common.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Tracing.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.8.0-preview"
       },
@@ -117,30 +141,6 @@
         "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.Design.dll",
         "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.dll",
         "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities",
-        "Version": "1.0.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.Services.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Client.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Common.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Tracing.dll"
-      ]
-    },
-    {
-      "Package": {
-        "Id": "Microsoft.Activities.Extensions",
-        "Version": "2.0.6.9"
-      },
-      "Assemblies": [
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "C:\\Users\\Chaitanya Kulkarni\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
       ]
     }
   ],
