@@ -121,33 +121,6 @@
           "lib/Interop.Domino.dll": {}
         }
       },
-      "Microsoft.Activities/1.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Activities.Design.Services.dll": {},
-          "lib/net45/Microsoft.Activities.Design.dll": {},
-          "lib/net45/Microsoft.Activities.dll": {},
-          "lib/net45/Microsoft.Workflow.Client.dll": {},
-          "lib/net45/Microsoft.Workflow.Common.dll": {},
-          "lib/net45/Microsoft.Workflow.Tracing.dll": {}
-        }
-      },
-      "Microsoft.Activities.Extensions/2.0.6.9": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Activities"
-        ],
-        "compile": {
-          "lib/Net45/_._": {}
-        },
-        "runtime": {
-          "lib/Net45/Microsoft.Activities.Extensions.Design.dll": {},
-          "lib/Net45/Microsoft.Activities.Extensions.dll": {}
-        }
-      },
       "Microsoft.AspNet.SignalR.Client/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -1118,46 +1091,6 @@
         "lib/Interop.Domino.dll"
       ]
     },
-    "Microsoft.Activities/1.0.1": {
-      "sha512": "jkwJR/MMdyLol9wkIXkbpcCu8AUAJte7UZM6IcoeOnrX8cNgHppt6IawNfkhGqQs6ulTklBuZ2DjLj1/154iUA==",
-      "type": "package",
-      "path": "microsoft.activities/1.0.1",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net45/Microsoft.Activities.Design.Services.dll",
-        "lib/net45/Microsoft.Activities.Design.dll",
-        "lib/net45/Microsoft.Activities.Design.xml",
-        "lib/net45/Microsoft.Activities.dll",
-        "lib/net45/Microsoft.Activities.xml",
-        "lib/net45/Microsoft.Workflow.Client.dll",
-        "lib/net45/Microsoft.Workflow.Client.xml",
-        "lib/net45/Microsoft.Workflow.Common.dll",
-        "lib/net45/Microsoft.Workflow.Tracing.dll",
-        "microsoft.activities.1.0.1.nupkg.sha512",
-        "microsoft.activities.nuspec"
-      ]
-    },
-    "Microsoft.Activities.Extensions/2.0.6.9": {
-      "sha512": "yGwK3gYUzzGIzgybBtXsCbcWIj+Dv+gadnaWkmG0WpBs22AV8ZS7deFhAb2pznDoGz0Pj4M7Tt9RwK9VrNzf4A==",
-      "type": "package",
-      "path": "microsoft.activities.extensions/2.0.6.9",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        "help/Microsoft.Activities.Extensions Documentation.chm",
-        "lib/Net40/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net40/Microsoft.Activities.Extensions.dll",
-        "lib/Net401/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net401/Microsoft.Activities.Extensions.dll",
-        "lib/Net45/Microsoft.Activities.Extensions.Design.dll",
-        "lib/Net45/Microsoft.Activities.Extensions.dll",
-        "microsoft.activities.extensions.2.0.6.9.nupkg.sha512",
-        "microsoft.activities.extensions.nuspec",
-        "tools/Microsoft.Activities.Extensions.NuGet.dll",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
     "Microsoft.AspNet.SignalR.Client/2.4.0": {
       "sha512": "xGoQq9dEsBU49U1Whl0To2JyRQePmo8ayYS8VNruLlQaX+fQBzYyLJeMlW9r7mlt8Vc9JP+083m9pKrfYpdDbg==",
       "type": "package",
@@ -1847,8 +1780,6 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "Microsoft.Activities >= 1.0.1 <= 1.0.1",
-      "Microsoft.Activities.Extensions >= 2.0.6.9 <= 2.0.6.9",
       "UiPath.Excel.Activities >= 2.8.0-preview <= 2.8.0-preview",
       "UiPath.Mail.Activities >= 1.8.0-preview <= 1.8.0-preview",
       "UiPath.System.Activities >= 19.12.0-preview <= 19.12.0-preview",
@@ -1870,16 +1801,6 @@
     "frameworks": {
       "net461": {
         "dependencies": {
-          "Microsoft.Activities": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.0.1, 1.0.1]"
-          },
-          "Microsoft.Activities.Extensions": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[2.0.6.9, 2.0.6.9]"
-          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
