@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="OpenBrowserAndNavigate" this:OpenBrowserAndNavigate.in_str_URLToOpen="https://www.juntadeandalucia.es/temas/contratacion-publica/perfiles-licitaciones/buscador-general.html" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="OpenBrowserAndNavigate" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_str_URLToOpen" Type="InArgument(x:String)" />
     <x:Property Name="out_bol_URLOpened" Type="OutArgument(x:Boolean)" />
@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>496,1050</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>496,1500</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OpenBrowserAndNavigate_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -55,7 +55,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OpenBrowserAndNavigate" sap:VirtualizedContainerService.HintSize="476,990" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OpenBrowserAndNavigate" sap:VirtualizedContainerService.HintSize="476,1440" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -71,21 +71,33 @@
         <InArgument x:TypeArguments="x:Boolean">False</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="434,405" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_str_URLToOpen]">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="434,755" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[in_str_URLToOpen]">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,306" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,656" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" DisplayName="Wait till page is loaded" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitVisible="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="300" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" DisplayName="Wait till page is loaded" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitVisible="True">
               <ui:WaitUiElementAppear.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='Junta de Andalucía*' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tab Row' role='page tab list' /&gt;&lt;ctrl name='Junta de Andalucía*' role='page tab' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cbf33fd877f69be4430ba66a077eac7a" Selector="&lt;html title='Junta de Andalucía*' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;fieldset&amp;gt;fieldset&amp;gt;legend' idx='5' parentid='form' tag='LEGEND' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -95,6 +107,18 @@
                 </ui:Target>
               </ui:WaitUiElementAppear.Target>
             </ui:WaitUiElementAppear>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="300" DelayMS="300" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgup" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
             <ui:UiElementExists DisplayName="Check if page loaded" Exists="[out_bol_URLOpened]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1be97839d00bd10c782ce56a5fc5e3ea" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='Junta de Andalucía*' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tab Row' role='page tab list' /&gt;&lt;ctrl name='Junta de Andalucía*' role='page tab' /&gt;">
@@ -117,6 +141,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OpenBrowser>
+    <Assign DisplayName="Assign out_bol_URLOpened" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[out_bol_URLOpened]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+      </Assign.Value>
+    </Assign>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Opening browser and navigating in browser workflow ended&quot;]" />
   </Sequence>
 </Activity>

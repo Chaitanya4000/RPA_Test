@@ -10,7 +10,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>497,2094</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>935,2579</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DataScrapping_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -60,7 +60,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DataScrapping" sap:VirtualizedContainerService.HintSize="477,2034" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DataScrapping" sap:VirtualizedContainerService.HintSize="915,2519" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ResultsLoaded" />
     </Sequence.Variables>
@@ -69,8 +69,8 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Scrapping data workflow execution started&quot;]" />
-    <Assign DisplayName="Assign str_ResultsLoaded" sap:VirtualizedContainerService.HintSize="435,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="873,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Scrapping data workflow execution started&quot;]" />
+    <Assign DisplayName="Assign str_ResultsLoaded" sap:VirtualizedContainerService.HintSize="873,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_ResultsLoaded]</OutArgument>
       </Assign.To>
@@ -80,7 +80,7 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Assign out_bol_ResultsFound" sap:VirtualizedContainerService.HintSize="435,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="Assign out_bol_ResultsFound" sap:VirtualizedContainerService.HintSize="873,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Boolean">[out_bol_ResultsFound]</OutArgument>
       </Assign.To>
@@ -88,7 +88,7 @@
         <InArgument x:TypeArguments="x:Boolean">False</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Assign out_dt_Results" sap:VirtualizedContainerService.HintSize="435,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+    <Assign DisplayName="Assign out_dt_Results" sap:VirtualizedContainerService.HintSize="873,60" sap2010:WorkflowViewState.IdRef="Assign_3">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[out_dt_Results]</OutArgument>
       </Assign.To>
@@ -96,20 +96,20 @@
         <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe Junta'" sap:VirtualizedContainerService.HintSize="435,1380" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d4537ff189a761ea4fada3d2621a8522" Selector="&lt;html title='Junta de Andalucía*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="IE" DisplayName="Attach Browser 'iexplore.exe Junta'" sap:VirtualizedContainerService.HintSize="873,1865" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d4537ff189a761ea4fada3d2621a8522" Selector="&lt;html title='Junta de Andalucía*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Add filter and search" sap:VirtualizedContainerService.HintSize="401,1234" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Add filter and search" sap:VirtualizedContainerService.HintSize="839,1719" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SelectItem ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="500" DisplayName="Select Filter Type Of Contract" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[in_str_TypeOfContract]">
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="500" DelayBefore="1200" DisplayName="Select Filter Type Of Contract" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[in_str_TypeOfContract]">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="16">
                   <x:String>Todos</x:String>
@@ -144,7 +144,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SelectItem>
-            <ui:SelectItem ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="500" DisplayName="Select Filter Procedimiento de adjudicación" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[in_str_ProcedimientoDeAdjudicacion]">
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="500" DisplayName="Select Filter Procedimiento de adjudicación" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[in_str_ProcedimientoDeAdjudicacion]">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="32">
                   <x:String>Todos excepto menores</x:String>
@@ -186,7 +186,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SelectItem>
-            <ui:SelectItem ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="500" DisplayName="Select Filter Estado de la licitación" sap:VirtualizedContainerService.HintSize="359,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[in_str_EstadoDeLaLicitacion]">
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayAfter="500" DisplayName="Select Filter Estado de la licitación" sap:VirtualizedContainerService.HintSize="797,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[in_str_EstadoDeLaLicitacion]">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="8">
                   <x:String>Todos</x:String>
@@ -214,7 +214,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SelectItem>
-            <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="500" DisplayName="Click 'BUSCAR'" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="500" DisplayName="Click 'BUSCAR'" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -242,7 +242,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:UiElementExists DisplayName="Check if page loaded" Exists="[out_bol_FiltersAppliedSuccessfully]" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:UiElementExists DisplayName="Check if page loaded" Exists="[out_bol_FiltersAppliedSuccessfully]" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1be97839d00bd10c782ce56a5fc5e3ea" Selector="&lt;wnd app='iexplore.exe' cls='IEFrame' title='Junta de Andalucía*' /&gt;&lt;wnd cls='DirectUIHWND' /&gt;&lt;ctrl name='Tab Row' role='page tab list' /&gt;&lt;ctrl name='Junta de Andalucía*' role='page tab' /&gt;" TimeoutMS="10000">
                   <ui:Target.WaitForReady>
@@ -257,7 +257,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:UiElementExists>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Number of results loaded" sap:VirtualizedContainerService.HintSize="359,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Number of results loaded" sap:VirtualizedContainerService.HintSize="797,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="aa73050f64d8b15efc6d1ffa6b9fc022" Selector="&lt;webctrl parentid='cuerpo' tag='P' aaname='*resultados' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -272,11 +272,11 @@
                 <OutArgument x:TypeArguments="x:String">[str_ResultsLoaded]</OutArgument>
               </ui:GetValue.Value>
             </ui:GetValue>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="359,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Number of results found are : &quot;+str_ResultsLoaded.Trim]" />
-            <If Condition="[str_ResultsLoaded.Trim.equals(&quot;0 resultados&quot;)]" DisplayName="If results are 0" sap:VirtualizedContainerService.HintSize="359,51" sap2010:WorkflowViewState.IdRef="If_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="797,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Number of results found are : &quot;+str_ResultsLoaded.Trim]" />
+            <If Condition="[str_ResultsLoaded.Trim.equals(&quot;0 resultados&quot;)]" DisplayName="If results are 0" sap:VirtualizedContainerService.HintSize="797,536" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -361,6 +361,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BrowserScope>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="435,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Scrapping data workflow execution ended&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="873,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Scrapping data workflow execution ended&quot;]" />
   </Sequence>
 </Activity>

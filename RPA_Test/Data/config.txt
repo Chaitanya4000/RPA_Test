@@ -8,9 +8,9 @@
 
 "TypeOfContract" : "Concesión de obras públicas",
 
-"ProcedimientoDeAdjudicación":"Abierto",
+"ProcedimientoDeAdjudicacion":"Abierto",
 
-"EstadoDeLaLicitación":"Publicada",
+"EstadoDeLaLicitacion":"Publicada",
 
 "ExcelPathForResults":"Data\\resultados.xslx"
 
